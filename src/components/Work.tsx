@@ -6,6 +6,57 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP);
 
+const contributions = [
+  {
+    title: "Fieldy",
+    category: "FSM Software",
+    tools: "Next.js, Tailwind CSS, React Query",
+    image: "src/assets/fieldy.png",
+    link: "https://getfieldy.com/",
+    video: "fieldy-action.gif",
+  },
+  {
+    title: "ProStrategy",
+    category: "SPM Software",
+    tools: "React, Tailwind CSS, SWR",
+    image: "src/assets/prostrategy.png",
+    link: "https://qa-prostrategy.zaiportal.com/login",
+    // video: "fieldy-action.gif",
+  },
+  {
+    title: "LegalType",
+    category: "Legal Writing Software",
+    tools: "Next.js, Tailwind CSS",
+    image: "src/assets/legaltype.png",
+    link: "https://app.legaltype.com/",
+    // video: "fieldy-action.gif",
+  },
+  {
+    title: "Lead Circle",
+    category: "Lead Management Software",
+    tools: "JavaScript, CSS, HTML",
+    image: "src/assets/leadcircle.png",
+    link: "https://leadcircle.ai/",
+    // video: "fieldy-action.gif",
+  },
+  {
+    title: "BuildChatbot",
+    category: "Chatbot Software",
+    tools: "JavaScript, CSS, HTML",
+    image: "src/assets/buildchatbot.png",
+    link: "https://buildchatbot.ai/",
+    // video: "fieldy-action.gif",
+  },
+  {
+    title: "Zippy Form",
+    category: "Form Builder Software",
+    tools: "JavaScript, CSS, HTML",
+    image: "src/assets/zippyform.png",
+    link: "https://zippyform.io/",
+    // video: "fieldy-action.gif",
+  },
+];
+
 const Work = () => {
   useGSAP(() => {
     let translateX: number = 0;
@@ -45,24 +96,28 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          My <span>Contributions</span>
         </h2>
         <div className="work-flex">
-          {[...Array(6)].map((_value, index) => (
+          {contributions?.map((_value, index) => (
             <div className="work-box" key={index}>
               <div className="work-info">
                 <div className="work-title">
                   <h3>0{index + 1}</h3>
 
                   <div>
-                    <h4>Project Name</h4>
-                    <p>Category</p>
+                    <h4>{_value.title}</h4>
+                    <p>{_value.category}</p>
                   </div>
                 </div>
                 <h4>Tools and features</h4>
-                <p>Javascript, TypeScript, React, Threejs</p>
+                <p>{_value.tools}</p>
               </div>
-              <WorkImage image="/images/placeholder.webp" alt="" />
+              <WorkImage
+                image={_value.image}
+                alt={_value.title}
+                link={_value.link}
+              />
             </div>
           ))}
         </div>

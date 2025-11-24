@@ -24,7 +24,7 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com"
+              href="https://github.com/Abdu-Ak"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -32,23 +32,23 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/abdulla-kk-45319b253/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
               Linkedin <MdArrowOutward />
             </a>
-            <a
+            {/* <a
               href="https://x.com"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
               Twitter <MdArrowOutward />
-            </a>
+            </a> */}
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/abd._ak_?igsh=MTFqYW9kMTYyZ3djdg=="
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -60,9 +60,9 @@ const Contact = () => {
             <h2>
               Designed and Developed <br /> by <span>AbduAk</span>
             </h2>
-            <h5>
+            {/* <h5>
               <MdCopyright /> 2025
-            </h5>
+            </h5> */}
           </div>
         </div>
       </div>
