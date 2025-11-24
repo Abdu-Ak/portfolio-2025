@@ -3,6 +3,7 @@ import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
+import resumePDF from "../assets/Abdulla.pdf";
 
 const SocialIcons = () => {
   useEffect(() => {
@@ -81,7 +82,11 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a className="resume-button" href="#">
+      <a
+        className="resume-button"
+        href={resumePDF}
+        download="Abdulla_Resume.pdf"
+      >
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />

@@ -4,6 +4,14 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
+// Import images
+import fieldyImg from "../assets/fieldy.png";
+import prostrategyImg from "../assets/prostrategy.png";
+import legaltypeImg from "../assets/legaltype.png";
+import leadcircleImg from "../assets/leadcircle.png";
+import buildchatbotImg from "../assets/buildchatbot.png";
+import zippyformImg from "../assets/zippyform.png";
+
 gsap.registerPlugin(useGSAP);
 
 const contributions = [
@@ -11,7 +19,7 @@ const contributions = [
     title: "Fieldy",
     category: "FSM Software",
     tools: "Next.js, Tailwind CSS, React Query",
-    image: "src/assets/fieldy.png",
+    image: fieldyImg,
     link: "https://getfieldy.com/",
     video: "fieldy-action.gif",
   },
@@ -19,7 +27,7 @@ const contributions = [
     title: "ProStrategy",
     category: "SPM Software",
     tools: "React, Tailwind CSS, SWR",
-    image: "src/assets/prostrategy.png",
+    image: prostrategyImg,
     link: "https://qa-prostrategy.zaiportal.com/login",
     // video: "fieldy-action.gif",
   },
@@ -27,7 +35,7 @@ const contributions = [
     title: "LegalType",
     category: "Legal Writing Software",
     tools: "Next.js, Tailwind CSS",
-    image: "src/assets/legaltype.png",
+    image: legaltypeImg,
     link: "https://app.legaltype.com/",
     // video: "fieldy-action.gif",
   },
@@ -35,7 +43,7 @@ const contributions = [
     title: "Lead Circle",
     category: "Lead Management Software",
     tools: "JavaScript, CSS, HTML",
-    image: "src/assets/leadcircle.png",
+    image: leadcircleImg,
     link: "https://leadcircle.ai/",
     // video: "fieldy-action.gif",
   },
@@ -43,7 +51,7 @@ const contributions = [
     title: "BuildChatbot",
     category: "Chatbot Software",
     tools: "JavaScript, CSS, HTML",
-    image: "src/assets/buildchatbot.png",
+    image: buildchatbotImg,
     link: "https://buildchatbot.ai/",
     // video: "fieldy-action.gif",
   },
@@ -51,7 +59,7 @@ const contributions = [
     title: "Zippy Form",
     category: "Form Builder Software",
     tools: "JavaScript, CSS, HTML",
-    image: "src/assets/zippyform.png",
+    image: zippyformImg,
     link: "https://zippyform.io/",
     // video: "fieldy-action.gif",
   },
